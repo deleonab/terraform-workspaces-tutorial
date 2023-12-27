@@ -42,7 +42,7 @@ terraform {
 
 ### Please watch one of our other videos in the channel to learn how to set up a remote backend using S3 and DynamoDB.
 
-### Youtube:  https://www.youtube.com/watch?v=oz-AQmP5AxA&t=3s
+Youtube:  https://www.youtube.com/watch?v=oz-AQmP5AxA&t=3s
 
 2. Let's create 3 different environments
 Production, Staging, Development
