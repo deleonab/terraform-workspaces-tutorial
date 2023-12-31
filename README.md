@@ -1,6 +1,13 @@
 TUTORIAL:
 HOW TO USE TERRAFORM IN MULTI ENVIRONMENTS
 
+OUR TASK FOR TODAY 
+1. Convert our local backend to a remote backend.
+2. create 3 workspaces for production, staging and development
+3. Edit our existing ec2 configuration and use terraform.workspace to tag each instance
+4. create 3 different tfvars files for each enviroment and set our variable there.
+5. Create our infrastructure for each enviroment by using their specific tfvars files.
+
 In the previous tutorial, we solved one problem by modularising our Terrafrom code to facilitate code reuse.
 We can now simply put in different parameters in our terraform.tfvars file.
 There is however another problem to be solved
@@ -109,7 +116,7 @@ ami = "ami-0fc5d935ebf8bc3bc"
 instance_type = "t2.micro"
  ```
 
- ### Let us set up tagging of our instances with the name of the workspace and environment they belong too, This way, we can identify them easily in the console later.
+ Let us set up tagging of our instances with the name of the workspace and environment they belong to. This way, we can identify them easily in the console later.
 
  ### We shall use a locals block for this 
  ### Edit my_ec2/my_ec2.tf
